@@ -1,0 +1,53 @@
+
+*{
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+    width: 0px;
+}
+.nav-container{
+    height: 100px;
+    box-shadow:  -2px 3px 6px #cecece,
+    2px -1px 6px #efeeee;
+}
+.nav-container-inner{
+    display: flex;
+    height: 100%;
+}
+.nav-container-inner .img-container{
+    width: 120px;
+    /* padding: 30px; */
+    object-fit: contain;
+}
+
+.nav-container-inner .data{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+h3{
+    position: relative;
+    margin:0;
+    text-decoration: underline;
+    font-weight: 700;
+    width: 100%;
+    color:var(--logo-color);
+    padding-left:.8em;
+}
+h3::before{
+
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 60px;
+    background-color: rgb(7, 51, 94);
+    transform: translate(-.6em,-15px);
+    border-radius: 8px;
+}
+.data h3::after{
+    position:absolute;
+    content: 'A rich Editor for Notes.';
+    letter-spacing: -1px;
+    font-size: .7rem;
+    font-weight: 400;
+}

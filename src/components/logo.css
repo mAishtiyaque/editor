@@ -1,0 +1,34 @@
+.overlap_circle{
+    position:absolute;
+    transform-origin:0% 0%;
+    transform: translate(-50%,-50%);
+    transform: scale(.45);
+}
+
+
+.logo_wrap{
+    /* animation:rotate1 2s linear infinite ; */
+    width:200px;
+    height:200px;
+    position:relative;
+    /* background-color: rgba(125, 84, 33, 0.901); */
+}
+.dot{
+    
+    z-index:2;
+    top:50%;
+    left:50%;
+    background-color: var(--logo-color);
+    color:var(--logo-color);
+    display: inline-block;
+    /* clip-path: circle(8px); */
+    position:absolute;
+}
+@keyframes rotate1 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    } 
+}
